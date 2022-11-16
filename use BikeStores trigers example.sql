@@ -121,9 +121,18 @@ GO
 
 -- select * from sales.updated_customers;
 
-create procedure pro_customer
-as
-begin
-  select * from sales.customers
-end;
 
+
+
+-- select TOP (50) *
+--   from sales.customers;
+
+
+-- create trigger test2 on sales.customers
+-- after
+-- insert,
+--     update as raiserror('Notify me test 2', );
+-- GO
+
+
+-- UPDATE sales.customers set  first_name='kamau2' where customer_id= 5;
